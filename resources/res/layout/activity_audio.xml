@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:id="@+id/searchid" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar android:layout_gravity="bottom" android:id="@+id/topm" android:background="#f7f7f7" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/searchid" app:cnb_menuResource="@menu/menu"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottomNavigation" android:layout_below="@+id/topm"/>
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation android:layout_gravity="bottom" android:id="@+id/bottomNavigation" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:mbn_backgroundBottomColor="#94ddff" app:mbn_defaultIconColor="@color/white" app:mbn_selectedIconColor="@color/white"/>
+</RelativeLayout>

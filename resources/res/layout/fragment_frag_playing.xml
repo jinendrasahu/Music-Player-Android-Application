@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/fragmentPlaying" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/cover" android:layout_width="match_parent" android:layout_height="300dp" android:src="@drawable/pic1"/>
+    <TextView android:textSize="20dp" android:textColor="#000" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="vro" android:textAlignment="center"/>
+    <TextView android:textSize="15dp" android:textColor="#000" android:id="@+id/artst" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="vro" android:textAlignment="center"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <SeekBar android:id="@+id/bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:pointerIcon="1000" android:layout_marginHorizontal="15dp"/>
+        <TextView android:textColor="#000" android:id="@+id/timer" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="00:00" android:textAlignment="center"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <ImageView android:id="@+id/back" android:padding="10dp" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/ic_back"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/play" android:padding="10dp" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/ic_playing"/>
+                <ImageView android:id="@+id/pause" android:padding="10dp" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/ic_pause"/>
+            </FrameLayout>
+            <ImageView android:id="@+id/far" android:padding="10dp" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/ic_far"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <ImageView android:id="@+id/repeat" android:padding="10dp" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/ic_repeat"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
